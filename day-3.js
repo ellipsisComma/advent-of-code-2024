@@ -13,7 +13,7 @@ const input = `from()]mul(317,745)-+?;what()&{mul(67,323)select()~(+/}what()<mul
 const result = [...input.matchAll(/mul\((\d{1,3}),(\d{1,3})\)/g)]
 	.reduce((acc, mul) => acc + parseInt(mul[1]) * parseInt(mul[2]), 0);
 
-console.log(result):
+console.log(`result: ${result}`):
 
 // remove all text between "dont'()" and the next-most "do()", then recalculate the total
 
@@ -22,4 +22,4 @@ const dontDoResult = [...input
 	.matchAll(/mul\((\d{1,3}),(\d{1,3})\)/g)]
 		.reduce((acc, mul) => acc + parseInt(mul[1]) * parseInt(mul[2]), 0);
 
-console.log(dontDoResult);
+console.log(`result after applying conditionals: ${dontDoResult}`);

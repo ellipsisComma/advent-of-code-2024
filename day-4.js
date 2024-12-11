@@ -170,7 +170,7 @@ function checkAllXMAS(x, y) {
 
 matrix.forEach((row, y) => row.forEach((_, x) => checkAllXMAS(x, y)));
 
-console.log(count);
+console.log(`count of XMASes: ${count}`);
 
 // as before, but find all A's, then check whether the adjacent characters in both diagonals are M and S in either direction for both lines
 
@@ -202,4 +202,4 @@ function checkAllCrossMAS(x, y) {
 
 matrix.forEach((row, y) => row.forEach((_, x) => checkAllCrossMAS(x, y)));
 
-console.log(count);
+console.log(`count of X-MASes: ${count}`);
