@@ -67,7 +67,6 @@ const city = input.split(`\n`).map(row => row.split(``));
 const xMax = city[0].length;
 const yMax = city.length;
 const nodes = {};
-const antiNodes = {};
 const uniqueAntiNodes = new Set();
 const nodeRegex = /[A-Za-z\d]/;
 
